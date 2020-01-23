@@ -16,7 +16,7 @@ if (isset($_GET['logout'])) {
 }
 
 if (isset($_SESSION['username'])) {
-  echo '<p>MeetUps Logged in as </p>';
+  echo '<p>Logged in as </p>';
   echo "<p>{$_SESSION['username']}</p>";
   echo '<p><a href="/?logout">Log Out</a></p>';
   die();
@@ -65,7 +65,7 @@ if (!isset($_SESSION['username'])) {
     'state' => $_SESSION['state'],
     'scope' => 'openid',
   ]);
-  echo '<p>MeetUps Not logged in</p>';
+  echo '<p>Not logged in</p>';
   echo '<p><a href="'.$authorize_url.'">Log In</a></p>';
 }
 
