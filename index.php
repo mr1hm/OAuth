@@ -22,8 +22,8 @@ if (isset($_SESSION['username'])) {
   die();
 }
 
-$client_id = 'OZGWWSZNDOMLKMHOGX';
-$client_secret = 'XKWR6FYLGEOAVPZIPSJWCXGZM5AR33SQ4LO35ATJNMIGLHW4CT';
+$client_id = '$client_id';
+$client_secret = '$client_secret';
 $redirect_uri = 'http://localhost:8080';
 $metadata_url = 'https://www.eventbrite.com/oauth/authorize?response_type=code&client_id=OZGWWSZNDOMLKMHOGX&redirect_uri=http://localhost:8080';
 $metadata = http($metadata_url);
